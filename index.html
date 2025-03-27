@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Events Calendar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>School Events Calendar</h1>
+    <div class="section-filter">
+      <button class="section-btn active" data-section="all">
+        All Sections
+      </button>
+      <button class="section-btn" data-section="Junior">Junior School</button>
+      <button class="section-btn" data-section="Senior">Senior School</button>
+    </div>
+    <div class="calendar-container">
+      <div id="calendar">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <h2 id="current-month">Month Year</h2>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-grid">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div id="calendar-days" class="calendar-grid"></div>
+      </div>
+      <div id="events-list">
+        <h3>Events</h3>
+        <div id="events-container"></div>
+      </div>
+    </div>
+
+    <script>
+      class SchoolCalendar {
+        constructor(events) {
+          this.events = events;
+          this.currentDate = new Date();
+          this.selectedSection = "all";
+          this.selectedDay = null;
+
+          this.initializeElements();
+          this.setupEventListeners();
+          this.renderCalendar();
+          this.renderEvents();
+        }
+
+        initializeElements() {
+          this.calendarDays = document.getElementById("calendar-days");
+          this.currentMonthElement = document.getElementById("current-month");
+          this.prevMonthBtn = document.getElementById("prev-month");
+          this.nextMonthBtn = document.getElementById("next-month");
+          this.eventsContainer = document.getElementById("events-container");
+          this.sectionButtons = document.querySelectorAll(".section-btn");
+          this.eventsHeading = document.querySelector("#events-list h3");
+        }
+
+        setupEventListeners() {
+          this.prevMonthBtn.addEventListener("click", () =>
+            this.changeMonth(-1)
+          );
+          this.nextMonthBtn.addEventListener("click", () =>
+            this.changeMonth(1)
+          );
+
+          this.sectionButtons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+              // Remove active class from all buttons
+              this.sectionButtons.forEach((b) => b.classList.remove("active"));
+              // Add active class to clicked button
+              btn.classList.add("active");
+              // Update selected section
+              this.selectedSection = btn.dataset.section;
+
+              // Refresh events when switching sections
+              if (this.selectedDay) {
+                this.renderEvents(
+                  this.getEventsForDate(this.selectedDay),
+                  true
+                );
+              } else {
+                this.renderCalendar();
+                this.renderEvents();
+              }
+            });
+          });
+        }
+
+        changeMonth(delta) {
+          this.currentDate.setMonth(this.currentDate.getMonth() + delta);
+          this.selectedDay = null; // Clear selected day when changing month
+          this.renderCalendar();
+          this.renderEvents();
+        }
+
+        renderCalendar() {
+          const year = this.currentDate.getFullYear();
+          const month = this.currentDate.getMonth();
+
+          this.currentMonthElement.textContent = new Date(
+            year,
+            month
+          ).toLocaleString("default", { month: "long", year: "numeric" });
+
+          const firstDay = new Date(year, month, 1).getDay();
+          const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+          this.calendarDays.innerHTML = "";
+
+          // Add empty padding days before the first day of the month
+          for (let i = 0; i < firstDay; i++) {
+            this.calendarDays.appendChild(document.createElement("div"));
+          }
+
+          // Add days of the month
+          for (let day = 1; day <= daysInMonth; day++) {
+            const currentDate = new Date(year, month, day);
+            const dayElement = document.createElement("div");
+            dayElement.textContent = day;
+            dayElement.classList.add("calendar-day");
+
+            const dayEvents = this.getEventsForDate(currentDate);
+
+            if (dayEvents.length > 0) {
+              dayElement.classList.add("has-event");
+            }
+
+            // Highlight selected day if applicable
+            if (
+              this.selectedDay &&
+              currentDate.toDateString() === this.selectedDay.toDateString()
+            ) {
+              dayElement.classList.add("selected");
+            }
+
+            dayElement.addEventListener("click", () =>
+              this.handleDayClick(currentDate, dayElement)
+            );
+
+            this.calendarDays.appendChild(dayElement);
+          }
+        }
+
+        handleDayClick(date, dayElement) {
+          // Remove previous selections
+          document
+            .querySelectorAll(".calendar-day")
+            .forEach((el) => el.classList.remove("selected"));
+          dayElement.classList.add("selected");
+
+          // Update selected day and re-render events for that day
+          this.selectedDay = date;
+          this.renderEvents(this.getEventsForDate(date), true);
+        }
+
+        renderEvents(specificEvents = null, forDay = false) {
+          let eventsToShow = specificEvents || this.getEventsForMonth();
+
+          // Handle section switching with a selected day
+          if (this.selectedDay && forDay) {
+            eventsToShow = this.getEventsForDate(this.selectedDay);
+          }
+
+          // Sort events by date
+          eventsToShow.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+          // Update heading dynamically based on context
+          if (forDay && this.selectedDay) {
+            this.eventsHeading.textContent = `Events for Date ${this.selectedDay.toLocaleDateString(
+              "en-US",
+              {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              }
+            )}`;
+          } else {
+            this.eventsHeading.textContent = `Events for Month ${this.currentDate.toLocaleString(
+              "default",
+              { month: "long", year: "numeric" }
+            )}`;
+          }
+
+          // Render events or show "No events found"
+          this.eventsContainer.innerHTML =
+            eventsToShow.length > 0
+              ? eventsToShow
+                  .map(
+                    (event) => `
+                        <div class="event-item">
+                            <div class="event-date">${new Date(
+                              event.date
+                            ).toLocaleDateString("en-US", {
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+                            })}</div>
+                            <div class="event-title">${this.escapeHtml(
+                              event.title
+                            )}</div>
+                            <div class="event-section">${this.escapeHtml(
+                              event.section
+                            )} Section</div>
+                            <div class="event-description">${this.escapeHtml(
+                              event.description
+                            )}</div>
+                        </div>
+                    `
+                  )
+                  .join("")
+              : "<p>No events found</p>";
+        }
+
+        getEventsForMonth() {
+          const year = this.currentDate.getFullYear();
+          const month = this.currentDate.getMonth();
+
+          return this.events.filter((event) => {
+            const eventDate = new Date(event.date);
+            return (
+              eventDate.getFullYear() === year &&
+              eventDate.getMonth() === month &&
+              (this.selectedSection === "all" ||
+                event.section === this.selectedSection)
+            );
+          });
+        }
+
+        getEventsForDate(date) {
+          return this.events.filter((event) => {
+            const eventDate = new Date(event.date);
+            return (
+              eventDate.toDateString() === date.toDateString() &&
+              (this.selectedSection === "all" ||
+                event.section === this.selectedSection)
+            );
+          });
+        }
+
+        // Escape HTML to prevent XSS
+        escapeHtml(unsafe) {
+          return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+        }
+      }
+
+      // Fetch and initialize the calendar
+      async function initializeCalendar() {
+        try {
+          const response = await fetch("events.json");
+          const schoolEvents = await response.json();
+
+          // Initialize the calendar once data is loaded
+          window.schoolCalendar = new SchoolCalendar(schoolEvents.events);
+        } catch (error) {
+          console.error("Error loading events:", error);
+          alert("Could not load events. Please check the events.json file.");
+        }
+      }
+
+      // Initialize when DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", initializeCalendar);
+    </script>
+  </body>
+</html>
