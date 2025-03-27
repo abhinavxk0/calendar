@@ -1,0 +1,781 @@
+{
+  "events": [
+    {
+      "title": "Animation by Talent Ease for Junior Section Teachers",
+      "date": "2025-04-01T09:00:00Z",
+      "description": "Animation by Talent Ease for Junior Section Teachers",
+      "section": "Junior",
+      "status": "W/D"
+    },
+    {
+      "title": "Senior Section Holiday",
+      "date": "2025-04-01T09:00:00Z",
+      "description": "Holiday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "New Academic Year Begins for Junior School Classes I-V",
+      "date": "2025-04-02T09:00:00Z",
+      "description": "New Academic Year Begins for Junior School Classes I-V / Half Day",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Animation by Talent Ease for Senior Section Teachers",
+      "date": "2025-04-02T09:00:00Z",
+      "description": "Animation by Talent Ease for Senior Section Teachers",
+      "section": "Senior",
+      "status": "W/D"
+    },
+    {
+      "title": "Regular Class",
+      "date": "2025-04-03T09:00:00Z",
+      "description": "Regular Class",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "New Academic Year Begins for Senior School",
+      "date": "2025-04-03T09:00:00Z",
+      "description": "New Academic Year Begins for Senior School / Half Day",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "First Friday Mass for Catholics",
+      "date": "2025-04-04T09:00:00Z",
+      "description": "First Friday Mass for Catholics",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "First Friday Mass for Catholics",
+      "date": "2025-04-04T09:00:00Z",
+      "description": "First Friday Mass for Catholics",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Christian Parent's Meeting",
+      "date": "2025-04-05T09:00:00Z",
+      "description": "Christian Parent's meeting at 9.00 am",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Christian Parent's Meeting",
+      "date": "2025-04-05T09:00:00Z",
+      "description": "Christian Parent's meeting at 9.00 am",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "UKG Classes Begin",
+      "date": "2025-04-07T10:00:00Z",
+      "description": "Classes Begin for UKG & Dispersal at 10.00 am",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "LKG Classes Begin",
+      "date": "2025-04-10T10:00:00Z",
+      "description": "Classes Begin for LKG & Dispersal at 10.00 am",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Palm Sunday",
+      "date": "2025-04-13T09:00:00Z",
+      "description": "Palm Sunday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Palm Sunday",
+      "date": "2025-04-13T09:00:00Z",
+      "description": "Palm Sunday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Dr. Ambedkar Jayanti",
+      "date": "2025-04-14T09:00:00Z",
+      "description": "Dr. Ambedkar Jayanti",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Dr. Ambedkar Jayanti",
+      "date": "2025-04-14T09:00:00Z",
+      "description": "Dr. Ambedkar Jayanti",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Bengali New Year's Day",
+      "date": "2025-04-15T09:00:00Z",
+      "description": "Bengali New Year's Day",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Bengali New Year's Day",
+      "date": "2025-04-15T09:00:00Z",
+      "description": "Bengali New Year's Day",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Maundy Thursday",
+      "date": "2025-04-17T09:00:00Z",
+      "description": "Maundy Thursday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Maundy Thursday",
+      "date": "2025-04-17T09:00:00Z",
+      "description": "Maundy Thursday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Good Friday",
+      "date": "2025-04-18T09:00:00Z",
+      "description": "Good Friday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Good Friday",
+      "date": "2025-04-18T09:00:00Z",
+      "description": "Good Friday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holy Saturday",
+      "date": "2025-04-19T09:00:00Z",
+      "description": "Holy Saturday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holy Saturday",
+      "date": "2025-04-19T09:00:00Z",
+      "description": "Holy Saturday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Easter Sunday",
+      "date": "2025-04-20T09:00:00Z",
+      "description": "Easter Sunday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Easter Sunday",
+      "date": "2025-04-20T09:00:00Z",
+      "description": "Easter Sunday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Easter Monday",
+      "date": "2025-04-21T09:00:00Z",
+      "description": "Easter Monday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Easter Monday",
+      "date": "2025-04-21T09:00:00Z",
+      "description": "Easter Monday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Career Counseling for Christian Students",
+      "date": "2025-04-26T09:00:00Z",
+      "description": "Career Counseling for Christian Students",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Career Counseling for Christian Students",
+      "date": "2025-04-26T09:00:00Z",
+      "description": "Career Counseling for Christian Students",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Monthly Inspection of Diaries",
+      "date": "2025-04-30T09:00:00Z",
+      "description": "Monthly Inspection of Diaries by the Class Teachers/Support Staff Day Celebrations",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Monthly Inspection of Diaries",
+      "date": "2025-04-30T09:00:00Z",
+      "description": "Monthly Inspection of Diaries by the Class Teachers/Support Staff Day Celebrations / Morning Assembly 9C",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "May Day / Feast of St. Joseph the Worker",
+      "date": "2025-05-01T09:00:00Z",
+      "description": "May Day / Feast of St. Joseph the Worker",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "May Day / Feast of St. Joseph the Worker",
+      "date": "2025-05-01T09:00:00Z",
+      "description": "May Day / Feast of St. Joseph the Worker",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holy Mass for Catholic Students",
+      "date": "2025-05-02T09:00:00Z",
+      "description": "Holy Mass for Catholic Students",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Holy Mass for Catholic Students",
+      "date": "2025-05-02T09:00:00Z",
+      "description": "Holy Mass for Catholic Students/Class Test 1 Begins",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Annual Retreat for Christian Students",
+      "date": "2025-05-03T09:00:00Z",
+      "description": "Annual Retreat for Christian Students",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Annual Retreat for Christian Students",
+      "date": "2025-05-03T09:00:00Z",
+      "description": "Annual Retreat for Christian Students",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Feast of St. Dominic Savio",
+      "date": "2025-05-06T09:00:00Z",
+      "description": "Feast of St. Dominic Savio / Special Assembly (Catholic Boys)",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Feast of St. Dominic Savio",
+      "date": "2025-05-06T09:00:00Z",
+      "description": "Feast of St. Dominic Savio / Investiture Ceremony",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Rabindra Jayanti / Annual Prize Day",
+      "date": "2025-05-09T09:00:00Z",
+      "description": "Rabindra Jayanti / Annual Prize Day / Special Assembly - Bengali",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Rabindra Jayanti / Annual Prize Day",
+      "date": "2025-05-10T09:00:00Z",
+      "description": "Rabindra Jayanti / Annual Prize Day",
+      "section": "Senior",
+      "status": "W/D"
+    },
+    {
+      "title": "Fees Due / Investiture Ceremony",
+      "date": "2025-05-16T09:00:00Z",
+      "description": "Fees Due / Investiture Ceremony",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Fees Due / Unit Test",
+      "date": "2025-05-16T09:00:00Z",
+      "description": "Fees Due / Unit Test",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Summer Vacation Begins",
+      "date": "2025-05-17T09:00:00Z",
+      "description": "Summer Vacation Begins",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Summer Vacation Begins",
+      "date": "2025-05-17T09:00:00Z",
+      "description": "Summer Vacation Begins",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holiday",
+      "date": "2025-06-01T09:00:00Z",
+      "description": "Holiday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holiday",
+      "date": "2025-06-01T09:00:00Z",
+      "description": "Holiday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Induction Programme for Teachers",
+      "date": "2025-06-13T09:00:00Z",
+      "description": "Induction Programme for Teachers",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Induction Programme for Teachers",
+      "date": "2025-06-13T09:00:00Z",
+      "description": "Induction Programme for Teachers",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Induction Programme for Teachers",
+      "date": "2025-06-14T09:00:00Z",
+      "description": "Induction Programme for Teachers",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Induction Programme for Teachers",
+      "date": "2025-06-14T09:00:00Z",
+      "description": "Induction Programme for Teachers",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Classes Resume after Summer Vacation",
+      "date": "2025-06-16T09:00:00Z",
+      "description": "Classes Resume after Summer Vacation / Compulsory Attendance",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Classes Resume after Summer Vacation",
+      "date": "2025-06-16T09:00:00Z",
+      "description": "Classes Resume after Summer Vacation / Compulsory Attendance / Unit Test",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Story Narration",
+      "date": "2025-06-18T09:00:00Z",
+      "description": "Story Narration Cl - 3 / Fees Due",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Story Narration",
+      "date": "2025-06-19T09:00:00Z",
+      "description": "Story Narration Cl - 4",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Story Narration",
+      "date": "2025-06-20T09:00:00Z",
+      "description": "Story Narration Cl - 5 / Morning Assembly 5E / Display Board Cl. 4 ABC",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "First Term First Round Begins",
+      "date": "2025-06-30T09:00:00Z",
+      "description": "First Term First Round Begins / Monthly Inspection of Diaries by the Class Teachers",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Classes Resume",
+      "date": "2025-07-01T09:00:00Z",
+      "description": "Classes Resume",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Unit Test",
+      "date": "2025-07-01T09:00:00Z",
+      "description": "Unit Test",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Second Language Recitation",
+      "date": "2025-07-01T09:00:00Z",
+      "description": "Second Language Recitation Cl. 5",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Animation of Parents",
+      "date": "2025-07-02T12:00:00Z",
+      "description": "Animation of Parents Cl - II to V at 12.00 noon / Second Language Recitation Cl. 4",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Animation of Parents",
+      "date": "2025-07-03T11:30:00Z",
+      "description": "Animation of Parents Cl - I & II at 11.30 am / Second Language Recitation Cl. 3",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Holy Mass for Catholic Students",
+      "date": "2025-07-04T10:00:00Z",
+      "description": "Holy Mass for Catholic Students / Animation of Parents Cl - LKG & UKG at 10.00 am / Morning Assembly 5C / Second Language Recitation Cl. 2",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Holy Mass for Catholic Students",
+      "date": "2025-08-01T09:00:00Z",
+      "description": "Holy Mass for Catholic Students / Morning Assembly 4D",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Holy Mass for Catholic Students",
+      "date": "2025-08-01T09:00:00Z",
+      "description": "Holy Mass for Catholic Students / Science Exhibition",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Independence Day Celebrations",
+      "date": "2025-08-15T09:00:00Z",
+      "description": "Independence Day Celebrations / Cultural Day",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Independence Day Celebrations",
+      "date": "2025-08-15T09:00:00Z",
+      "description": "Independence Day Celebrations",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Regular Class",
+      "date": "2025-09-01T09:00:00Z",
+      "description": "Regular Class",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Teachers' Day Celebrations",
+      "date": "2025-09-04T09:00:00Z",
+      "description": "Teachers' Day Celebrations",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Teachers' Day Celebrations",
+      "date": "2025-09-04T09:00:00Z",
+      "description": "Teachers' Day Celebrations",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "First Terminal Examination Ends",
+      "date": "2025-09-19T09:00:00Z",
+      "description": "First Terminal Examination Ends",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Puja Vacation Begins",
+      "date": "2025-09-26T09:00:00Z",
+      "description": "Puja Vacation Begins",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Puja Vacation Begins",
+      "date": "2025-09-26T09:00:00Z",
+      "description": "Puja Vacation Begins",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Durga Puja",
+      "date": "2025-10-01T09:00:00Z",
+      "description": "Durga Puja",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Durga Puja",
+      "date": "2025-10-01T09:00:00Z",
+      "description": "Durga Puja",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Gandhi Jayanti / Vijaya Dasami",
+      "date": "2025-10-02T09:00:00Z",
+      "description": "Gandhi Jayanti / Vijaya Dasami",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Gandhi Jayanti / Vijaya Dasami",
+      "date": "2025-10-02T09:00:00Z",
+      "description": "Gandhi Jayanti / Vijaya Dasami",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Lakshmi Puja",
+      "date": "2025-10-08T09:00:00Z",
+      "description": "Lakshmi Puja",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Lakshmi Puja",
+      "date": "2025-10-08T09:00:00Z",
+      "description": "Lakshmi Puja",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Kali Puja / Diwali",
+      "date": "2025-10-24T09:00:00Z",
+      "description": "Kali Puja / Diwali",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Kali Puja / Diwali",
+      "date": "2025-10-24T09:00:00Z",
+      "description": "Kali Puja / Diwali",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holiday",
+      "date": "2025-11-01T09:00:00Z",
+      "description": "Holiday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Birthday of Guru Nanak",
+      "date": "2025-11-05T09:00:00Z",
+      "description": "Birthday of Guru Nanak",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Birthday of Guru Nanak",
+      "date": "2025-11-05T09:00:00Z",
+      "description": "Birthday of Guru Nanak",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Children's Day Celebration",
+      "date": "2025-11-14T09:00:00Z",
+      "description": "Children's Day Celebration",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Children's Day Celebration",
+      "date": "2025-11-14T09:00:00Z",
+      "description": "Children's Day Celebration",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Pre-Christmas Celebrations",
+      "date": "2025-12-01T09:00:00Z",
+      "description": "Pre-Christmas Celebrations for Students / Fees Due",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "Pre-Christmas Celebrations",
+      "date": "2025-12-01T09:00:00Z",
+      "description": "Pre-Christmas Celebrations for Students / Fees Due",
+      "section": "Senior",
+      "status": "Class"
+    },
+    {
+      "title": "Winter Vacation Begins",
+      "date": "2025-12-24T09:00:00Z",
+      "description": "Winter Vacation Begins",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Winter Vacation Begins",
+      "date": "2025-12-24T09:00:00Z",
+      "description": "Winter Vacation Begins",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Christmas Day",
+      "date": "2025-12-25T09:00:00Z",
+      "description": "Christmas Day",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Christmas Day",
+      "date": "2025-12-25T09:00:00Z",
+      "description": "Christmas Day",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Happy New Year 2026",
+      "date": "2026-01-01T09:00:00Z",
+      "description": "Happy New Year 2026",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Happy New Year 2026",
+      "date": "2026-01-01T09:00:00Z",
+      "description": "Happy New Year 2026",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Swami Vivekananda's Birthday",
+      "date": "2026-01-12T09:00:00Z",
+      "description": "Swami Vivekananda's Birthday",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Swami Vivekananda's Birthday",
+      "date": "2026-01-12T09:00:00Z",
+      "description": "Swami Vivekananda's Birthday",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Republic Day",
+      "date": "2026-01-26T09:00:00Z",
+      "description": "Republic Day",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Republic Day",
+      "date": "2026-01-26T09:00:00Z",
+      "description": "Republic Day",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Feast of St. John Bosco / Foundation Day",
+      "date": "2026-01-31T09:00:00Z",
+      "description": "Feast of St. John Bosco / Foundation Day",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Feast of St. John Bosco / Foundation Day",
+      "date": "2026-01-31T09:00:00Z",
+      "description": "Feast of St. John Bosco / Foundation Day",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Rector's & Parents' Day Junior School",
+      "date": "2026-02-14T09:00:00Z",
+      "description": "Rector's & Parents' Day Junior School",
+      "section": "Junior",
+      "status": "W/D"
+    },
+    {
+      "title": "Rector's & Parents' Day Junior School",
+      "date": "2026-02-14T09:00:00Z",
+      "description": "Rector's & Parents' Day Junior School",
+      "section": "Senior",
+      "status": "W/D"
+    },
+    {
+      "title": "Holi",
+      "date": "2026-03-01T09:00:00Z",
+      "description": "Holi",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Holi",
+      "date": "2026-03-01T09:00:00Z",
+      "description": "Holi",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "Evaluation of Scripts",
+      "date": "2026-03-09T09:00:00Z",
+      "description": "Evaluation of Scripts / Activities for Students",
+      "section": "Junior",
+      "status": "W/D"
+    },
+    {
+      "title": "Evaluation of Scripts",
+      "date": "2026-03-09T09:00:00Z",
+      "description": "Evaluation of Scripts",
+      "section": "Senior",
+      "status": "W/D"
+    },
+    {
+      "title": "Distribution of Books",
+      "date": "2026-03-23T09:00:00Z",
+      "description": "Distribution of Books",
+      "section": "Junior",
+      "status": "Hol"
+    },
+    {
+      "title": "Distribution of Books",
+      "date": "2026-03-23T09:00:00Z",
+      "description": "Distribution of Books",
+      "section": "Senior",
+      "status": "Hol"
+    },
+    {
+      "title": "2026-27 Session Begins",
+      "date": "2026-04-07T09:00:00Z",
+      "description": "2026-27 Session Begins",
+      "section": "Junior",
+      "status": "Class"
+    },
+    {
+      "title": "2026-27 Session Begins",
+      "date": "2026-04-07T09:00:00Z",
+      "description": "2026-27 Session Begins",
+      "section": "Senior",
+      "status": "Class"
+    }
+  ]
+}
