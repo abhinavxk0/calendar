@@ -70,6 +70,12 @@
           this.nextMonthBtn.addEventListener("click", () =>
             this.changeMonth(1)
           );
+          
+          // Add event listener for current-month element
+          this.currentMonthElement.addEventListener("click", () => {
+            this.resetSelectedDay();
+            this.renderEvents();
+          });
 
           this.sectionButtons.forEach((btn) => {
             btn.addEventListener("click", () => {
@@ -96,9 +102,17 @@
 
         changeMonth(delta) {
           this.currentDate.setMonth(this.currentDate.getMonth() + delta);
-          this.selectedDay = null; // Clear selected day when changing month
+          this.resetSelectedDay(); // Clear selected day when changing month
           this.renderCalendar();
           this.renderEvents();
+        }
+        
+        resetSelectedDay() {
+          this.selectedDay = null;
+          // Remove selected class from all days
+          document.querySelectorAll(".calendar-day").forEach(day => {
+            day.classList.remove("selected");
+          });
         }
 
         renderCalendar() {
@@ -109,6 +123,9 @@
             year,
             month
           ).toLocaleString("default", { month: "long", year: "numeric" });
+          
+          // Add a cursor pointer style to indicate it's clickable
+          this.currentMonthElement.style.cursor = "pointer";
 
           const firstDay = new Date(year, month, 1).getDay();
           const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -174,7 +191,7 @@
 
           // Update heading dynamically based on context
           if (forDay && this.selectedDay) {
-            this.eventsHeading.textContent = `Events for Date ${this.selectedDay.toLocaleDateString(
+            this.eventsHeading.textContent = `Events for ${this.selectedDay.toLocaleDateString(
               "en-US",
               {
                 year: "numeric",
@@ -183,7 +200,7 @@
               }
             )}`;
           } else {
-            this.eventsHeading.textContent = `Events for Month ${this.currentDate.toLocaleString(
+            this.eventsHeading.textContent = `Events for ${this.currentDate.toLocaleString(
               "default",
               { month: "long", year: "numeric" }
             )}`;
@@ -196,13 +213,13 @@
                   .map(
                     (event) => `
                         <div class="event-item">
-                            <div class="event-date">${new Date(
+                            ${!forDay ? `<div class="event-date">${new Date(
                               event.date
                             ).toLocaleDateString("en-US", {
                               year: "numeric",
                               month: "long",
                               day: "numeric",
-                            })}</div>
+                            })}</div>` : ''}
                             <div class="event-title">${this.escapeHtml(
                               event.title
                             )}</div>
